@@ -1,0 +1,387 @@
+# https://qiita.com/P-man_Brown/items/644185672bf9854fccaf
+version: 1
+meta:
+  - title: 表記のルール
+  - memo: 汎用的な表記のルールを追加する
+rules:
+  # あ行
+  - expected: あいにく
+    patterns: 生憎
+  - expected: あえて
+    patterns: 敢えて
+  - expected: あくまで
+    patterns: /飽く(まで|迄)/
+  - expected: あらかじめ
+    patterns: 予め
+  - expected: あらかた
+    patterns: 粗方
+  - expected: あらためて
+    patterns: 改めて
+  - expected: ありがとう
+    patterns: 有難う
+  - expected: あるいは
+    patterns: 或いは
+  - expected: あわせて
+    patterns: 併せて
+  - expected: と$1い$2$3$4
+    patterns: /と([かは])?言([うえわっ])(れ)?(る|ない|なく|なかった|ます|ました|ません|れば|ば|たら|た|て|ず)?/
+    prh: 「〜と言う」が補助動詞の場合はひらがなに修正してください。
+  - expected: いか
+    patterns: 如何
+  - expected: $1$2$3
+    patterns: /て行([かきくけこ])(れ)?(ない|なく|なかった|ます|ました|ません|れる|れば|ば|たら|た|て|ず|うと|う)?/
+    prh: 「〜て行く」が補助動詞の場合はひらがなに修正してください。
+  - expected: いずれ
+    patterns: 何れ
+  - expected: いた$1$2
+    patterns: /致([さしすせそ])(る|ない|なく|なかった|ます|ました|ません|れば|ば|たら|た|て|ず|うと|う)?/
+  - expected: いただ$1$2
+    patterns: /頂([いかきくけ])(なる|る|ない|なく|なかった|なくなった|なく|です|れば|たら|たく|たい|た|て)?/
+  - expected: いた$1$2$3
+    patterns: /至([らりるれろっ])?(れ)?(ない|なく|なかった|ます|ました|ません|れば|ば|たら|た|て|ず|うと|う)?/
+  - expected: いたずらに
+    patterns: 徒に
+  - expected: いち早く
+    patterns: いちはやく
+  - expected: いつ
+    patterns: 何時
+    prh: 「何時」が「いつ」の場合はひらがなに修正してください。
+  - expected: いったん
+    patterns: 一旦
+  - expected: いってきます
+    patterns: /(い|行)って(き|来)ます/
+  - expected: いまさら
+    patterns: 今更
+  - expected: いまだ
+    patterns: いまにも
+  - expected: 今にも
+    patterns: 未だ
+  - expected: いろいろ
+    patterns: 色々
+  - expected: いやしくも
+    patterns: 苟も
+  - expected: いわば
+    patterns: 言わば
+  - expected: いわゆる
+    patterns: 所謂
+  - expected: 受付開始
+    patterns: /(受付け|受け付け)開始/
+    specs:
+      - from: 受付け開始
+        to: 受付開始
+  - expected: 受付時間
+    patterns: /(受付け|受け付け)時間/
+    specs:
+      - from: 受付け時間
+        to: 受付時間
+  - expected: 受付設定
+    patterns: /(受付け|受け付け)設定/
+    specs:
+      - from: 受付け設定
+        to: 受付設定
+  - expected: 受け付け$1
+    patterns: /受付け(る|ない|ず|て|ます|ません)/
+    specs:
+      - from: 受付ける
+        to: 受け付ける
+  - expected: 受け取$1
+    patterns: /受取(る|り|らない|らず|って|った|ります|ました|ません|ませんでした)/
+    specs:
+      - from: 受取る
+        to: 受け取る
+  - expected: うすうす
+    patterns: 薄々
+  - expected: おおむね
+    patterns: 概ね
+  - expected: おしなべて
+    patterns: /(お|押)し(な|並)べて/
+  - expected: お手数をおかけしますが
+    patterns:
+      - お手数をお掛けしますが
+      - /お手数をお掛け(いた|致)しますが/
+  - expected: 問い合わせ
+    patterns:
+      - 問合わせ
+      - 問合せ
+  - expected: おのずから
+    patterns: 自ずから
+  - expected: おのずと
+    patterns: 自ずと
+  - expected: およそ
+    patterns: 凡そ
+  - expected: おもむろに
+    patterns: 徐に
+  - expected: および
+    patterns: 及び
+
+  # か行
+  - expected: かえって
+    patterns: 却って
+  - expected: かつ
+    patterns: 且つ
+  - expected: かつて
+    patterns: 嘗て
+  - expected: かねて
+    patterns: 予て
+  - expected: かもしれ$1
+    patterns: /かも知れ(ない|なかった|ません|ず|なく)/
+  - expected: 切り替え
+    patterns:
+      - 切替
+      - 切替え
+      - 切換
+      - 切り換え
+  - expected: ください
+    patterns: 下さい
+  - expected: $1くらい
+    patterns: /(人|件|冊|行|時間|時|分|秒)位/
+    prh: 注意：自動修正すると「くらい」になります。
+    specs:
+      - from: 人位
+        to: 人くらい
+  - expected: ご$1
+    patterns: /御(意見|確認|解約|参照|相談|注意|注文|登録|入力|予約|覧|了承|利用|連絡)/
+    specs:
+      - from: 御意見
+        to: ご意見
+  - expected: ございま$1
+    patterns: /御座いま(す|した|せん)/
+    specs:
+      - from: 御座います
+        to: ございます
+  - expected: ご存じ
+    patterns: ご存知
+  - expected: ことごとく
+    patterns: /(悉|尽)く/
+  - expected: これほど
+    patterns: これ程
+  - expected: ごろ$1
+    patterns: /頃(で|に|を|は|の|が)/
+    prh: 注意：自動修正すると「ごろ」になります。
+
+  # さ行
+  - expected: さきほど
+    patterns: 先程
+  - expected: さまざま
+    patterns: 様々
+  - expected: さらに
+    patterns: /^更に/
+    specs:
+      - from: 更に
+        to: さらに
+  - expected: しかし
+    patterns: 然し
+  - expected: しきりに
+    patterns: 頻りに
+  - expected: しばらく
+    patterns: 暫く
+  - expected: 障がい者
+    patterns: 障害者
+  - expected: しょせん
+    patterns: 所詮
+  - expected: すぎ$1
+    patterns: /過ぎ(ると|る|ない|なく|なかった|ます|ました|ません|れば|たら|た|て|だ|で|ず|ようと|ようが)?/
+    prh: 「過ぎる」が補助動詞の場合はひらがなに修正してください。
+  - expected: すこぶる
+    patterns: 頗る
+  - expected: すでに
+    patterns: 既に
+  - expected: すなわち
+    patterns: 即ち
+  - expected: すべて
+    patterns: 全て
+  - expected: 精いっぱい
+    patterns: 精一杯
+  - expected: せっかく
+    patterns: 折角
+  - expected: ぜひ
+    patterns: 是非
+
+  # た行
+  - expected: たくさん
+    patterns: 沢山
+  - expected: $1だ$2$3$4
+    patterns: /([いきしちにひみり])出([さしすせそ])(れ)?(る|ない|なく|なかった|ます|ました|ません|れば|ば|たら|た|て|ず|うと|う)?/
+    prh: 「〜出す」が補助動詞の場合はひらがなに修正してください。
+  - expected: たびたび
+    patterns: 度々
+  - expected: でき$1
+    patterns: /出来(る|ない|なく|なかった|ます|ました|ません|れば|たら|た|て|ず)?/
+  - expected: ただ
+    patterns: 只
+  - expected: ただし
+    patterns: 但し
+  - expected: たちどころに
+    patterns: 立ち所に
+  - expected: たとえ$1
+    patterns: /例え(ば)?/
+  - expected: ちょうど
+    patterns: 丁度
+  - expected: とおり
+    patterns: とうり
+  - expected: とくと
+    patterns: 篤と
+  - expected: どだい
+    patterns: 土台
+    prh: 「土台」が副詞の場合はひらがなに修正してください。
+  - expected: 取り扱$1
+    patterns: /取扱(い|う)/
+    specs:
+      - from: 取扱い
+        to: 取り扱い
+    prh: 動詞の場合は「取り扱(い|う)」の形で送り仮名を入れます。ただし名詞の場合は「取扱(い)」でも構いません。
+  - expected: とりわけ
+    patterns: 取り分け
+    prh: 「取り分け」が副詞の場合はひらがなに修正してください。
+
+  # な行
+  - expected: $1ない
+    patterns: /(が|は|に|では|でも|関係|)無い/
+    specs:
+      - from: が無い
+        to: がない
+  - expected: なお$1
+    patterns: /尚(、|のこと)/
+    specs:
+      - from: 尚、
+        to: なお、
+  - expected: なおさら
+    patterns: 尚更
+  - expected: なかなか
+    patterns: 中々
+  - expected: なぜ
+    patterns: 何故
+  - expected: など
+    patterns: 等
+  - expected: ならびに
+    patterns: 並びに
+  - expected: のよう$1
+    patterns: /の様(に|な|で|だ|。)/
+    specs:
+      - from: の様に
+        to: のように
+
+  # は行
+  - expected: はじめて
+    patterns: 初めて
+  - expected: ひとえに
+    patterns: 偏に
+  - expected: ひときわ
+    patterns: 一際
+  - expected: ひとしお
+    patterns: 一入
+  - expected: ひとまず
+    patterns: 一先ず
+  - expected: ひとり
+    patterns: 独り
+  - expected: ひな形
+    patterns: 雛形
+  - expected: て欲しい$1$2
+    patterns: /て欲し([いかくけそ])(なる|なり|ない|なくなった|なった|なく|なかった|です|れば|ったら|った|て|う)?/
+  - expected: ほとんど
+    patterns: 殆ど
+
+  # ま行
+  - expected: まさしく
+    patterns: 正しく
+    prh: 「正しく」が「まさしく」の場合はひらがなに修正してください。
+  - expected: まさに
+    patterns: 正に
+  - expected: まず
+    patterns: 先ず
+  - expected: まして
+    patterns: 況して
+  - expected: また$1
+    patterns: /又(、|は|の|しても)/
+    specs:
+      - from: 又は
+        to: または
+  - expected: まる
+    patterns: 丸で
+    prh: 「丸で」が副詞の場合はひらがなに修正してください。
+  - expected: まで
+    patterns: 迄
+  - expected: まんざら
+    patterns: 満更
+  - expected: 見積$1
+    patterns: /見積も(り|る)/
+    specs:
+      - from: 見積もり
+        to: 見積り
+  - expected: 見積書
+    patterns: /(見積り書|見積もり書)/
+    specs:
+      - from: 見積り書
+        to: 見積書
+  - expected: むげに
+    patterns: 無碍に
+  - expected: むしろ
+    patterns: 寧ろ
+  - expected: 無理やり
+    patterns: 無理矢理
+  - expected: めったに
+    patterns: 滅多に
+  - expected: めっぽう
+    patterns: 滅法
+  - expected: もちろん
+    patterns: 勿論
+  - expected: もっとも
+    patterns: 最も
+  - expected: もともと
+    patterns: 元々
+  - expected: もとより
+    patterns: (素|固|元)より
+  - expected: もはや
+    patterns: 最早
+  - expected: 申し込み
+    patterns: 申込み
+  - expected: 申込書
+    patterns:
+      - 申し込み書
+      - 申込み書
+  - expected: 申込フォーム
+    patterns:
+      - 申し込みフォーム
+      - 申込みフォーム
+  - expected: 申し訳ございません
+    patterns: 申し訳ありません
+  - expected: もし
+    patterns: 若し
+
+  # や行
+  - expected: やはり
+    patterns: 矢張り
+  - expected: ようやく
+    patterns: 漸く
+  - expected: よほど
+    patterns: 余程
+  - expected: よろしく
+    patterns: 宜しく
+
+  # わ行
+  - expected: わか$1$2$3
+    patterns: /分か([らりるれろっ])?(れ)?(ない|なく|なかった|ます|ました|ません|れば|ば|たら|た|て|ず|うと|う)?/
+  - expected: わずか
+    patterns: 僅か
+  - expected: 私たち
+    patterns: 私達
+  - expected: をもって
+    patterns:
+      - を以て
+      - を以って
+  - expected: $1もと$2
+    patterns: (を|が|の)基(に|と|の|で)
+
+  # 句読点
+  - expected: $1
+    patterns: /(一方|なお|また)、/
+    specs:
+      - from: また、
+        to: また
+    prh: 誤読や難読の恐れのある場合を除き、読点を省略します
+  - expected: $1
+    patterns: /、(「|『)/
+    specs:
+      - from: 、「
+        to: 「
+    prh: 誤読や難読の恐れのある場合を除き、読点を省略します
