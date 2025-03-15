@@ -1,13 +1,17 @@
 {
-  "name": "zenn-articles",
-  "repository": "https://github.com/eai04191/zenn-articles",
-  "license": "MIT",
-  "scripts": {
-    "article": "zenn new:article",
-    "book": "zenn new:book",
-    "preview": "zenn preview"
-  },
-  "dependencies": {
-    "zenn-cli": "^0.1.114"
-  }
+    "name": "zenn-articles",
+    "repository": "https://github.com/eai04191/zenn-articles",
+    "license": "MIT",
+    "scripts": {
+        "article": "zenn new:article",
+        "book": "zenn new:book",
+        "preview": "zenn preview",
+        "format": "prettier --write ."
+    },
+    "dependencies": {
+        "zenn-cli": "^0.1.114"
+    },
+    "devDependencies": {
+        "prettier": "^3.5.3"
+    }
 }
