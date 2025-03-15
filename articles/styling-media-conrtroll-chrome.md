@@ -14,5 +14,5 @@ https://githubnext.com/projects/repo-visualization/
 
 ## memo
 
--   https://developer.mozilla.org/ja/docs/Web/CSS/WebKit_Extensions#%E6%93%AC%E4%BC%BC%E8%A6%81%E7%B4%A0
--   https://chromium.googlesource.com/chromium/blink/+/refs/heads/main/Source/core/css/mediaControlsNew.css
+- https://developer.mozilla.org/ja/docs/Web/CSS/WebKit_Extensions#%E6%93%AC%E4%BC%BC%E8%A6%81%E7%B4%A0
+- https://chromium.googlesource.com/chromium/blink/+/refs/heads/main/Source/core/css/mediaControlsNew.css
