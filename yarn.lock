@@ -4,10 +4,10 @@
 
 prettier@^3.5.3:
   version "3.5.3"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.5.3.tgz#4fc2ce0d657e7a02e602549f053b239cb7dfe1b5"
+  resolved "https://registry.npmjs.org/prettier/-/prettier-3.5.3.tgz"
   integrity sha512-QQtaxnoDJeAkDvDKWCLiwIXkTgRhwYDEQCghU9Z6q03iyek/rxRh/2lC3HB7P8sWT2xC/y5JDctPLBIGzHKbhw==
 
-zenn-cli@^0.1.114:
-  version "0.1.114"
-  resolved "https://registry.yarnpkg.com/zenn-cli/-/zenn-cli-0.1.114.tgz#e1d9102eceadf7c603a9f37f8a4c73dc5ef2bda2"
-  integrity sha512-8dpBVfywzxyqPo8jAhRECYsb9IZHgF3KzVnj6rGdZPPPaa/GwQThvIf6FjyEnXQaU6JKq7jjnpi+aSYs1hXEYQ==
+zenn-cli@^0.1.158:
+  version "0.1.158"
+  resolved "https://registry.yarnpkg.com/zenn-cli/-/zenn-cli-0.1.158.tgz#afeb36bc88516f2375455754af2753d89d4f0351"
+  integrity sha512-bvQ96fK+9qw+SKxEmncg/rYU+1u0V6Bh+HuV8By+u4L+VZt/jn9hFyL+KWj/2ncSBDtcEBo6XLsCdNLxlUo+RA==

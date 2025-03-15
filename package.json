@@ -9,7 +9,7 @@
         "format": "prettier --write ."
     },
     "dependencies": {
-        "zenn-cli": "^0.1.114"
+        "zenn-cli": "^0.1.158"
     },
     "devDependencies": {
         "prettier": "^3.5.3"
