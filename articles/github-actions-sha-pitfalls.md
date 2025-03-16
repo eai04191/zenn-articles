@@ -46,7 +46,7 @@ GitHub Actionsでサードパーティアクションを呼び出すときに何
 
 私たちが普段なにげなく使っているGitHub Actionsのworkflowで`uses: actions/checkout@v4`のように書くと、これは[`actions/checkout`](https://github.com/actions/checkout)リポジトリのタグ`v4`を指定していることになります。
 
-（正確にはブランチも同じように指定できますが、一般的にはタグを指定することが多いので、ここではタグに絞って説明します）
+（正確にはブランチなどのrefsも同じように指定できますが、一般的にはタグを指定することが多いので、ここではタグに絞って説明します）
 
 これは一見セマンティックバージョニングに基づいているように見えますが、実はそうではありません。GitHubのドキュメントでは[セマンティックバージョニングを使用することを推奨しています](https://docs.github.com/en/actions/sharing-automations/creating-actions/about-custom-actions#using-tags-for-release-management)が、gitのタグとして許容されるものなら何でも使えます。しかし、セマンティックバージョニングのように使えたほうが便利であることをみな知っているので、サードパーティアクションの作者たちが気を利かせてやってくれているだけなのです。
 
