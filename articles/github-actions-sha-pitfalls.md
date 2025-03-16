@@ -4,7 +4,7 @@ emoji: "🔒"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [githubactions, security]
 publication_name: "ncdc"
-published: false
+published: true
 ---
 
 :::details TL;DR
