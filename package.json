@@ -6,7 +6,8 @@
         "article": "zenn new:article",
         "book": "zenn new:book",
         "preview": "zenn preview",
-        "format": "prettier --write ."
+        "format": "prettier --write .",
+        "prh": "prh"
     },
     "dependencies": {
         "zenn-cli": "^0.1.158"
