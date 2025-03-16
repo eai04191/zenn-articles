@@ -33,7 +33,7 @@ published: true
 - 2025/03/15 6時ごろ: 侵害されているとissueが立てられる
     - https://github.com/tj-actions/changed-files/issues/2463
 - 2025/03/15 21時ごろ: リポジトリが組織ごと非公開に
-- 2025/03/16 7時ごろ: 悪意のあるコードとコミットが削除されて、組織とリポジトリが再び公開されました
+- 2025/03/16 7時ごろ: 悪意のあるコードとコミットが削除されて、組織とリポジトリが再び公開される
     - https://github.com/tj-actions/changed-files/issues/2463#issuecomment-2727015784
 
 ---
