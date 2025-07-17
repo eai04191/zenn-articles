@@ -39,6 +39,7 @@ export default config;
 const config = tseslint.config(
     // ...
 );
+
 export default config;
 ```
 
