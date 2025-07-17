@@ -3,7 +3,7 @@ title: "eslintのconfigでTS2742エラーが出るときの対処"
 emoji: "🔧"
 type: "tech"
 topics: [typescript, eslint, pnpm]
-publication_name: "ncdc"\
+publication_name: "ncdc"
 published: true
 ---
 
