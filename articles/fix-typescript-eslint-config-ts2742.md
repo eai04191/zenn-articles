@@ -1,5 +1,5 @@
 ---
-title: "eslintのconfigでTS2742エラーが出るときの対処"
+title: "typescript-eslintのconfigでTS2742エラーが出るときの対処"
 emoji: "🔧"
 type: "tech"
 topics: [typescript, eslint, pnpm]
