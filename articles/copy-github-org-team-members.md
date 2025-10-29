@@ -3,7 +3,8 @@ title: "gh cliでGitHub Organizationのチームメンバーを別のチーム�
 emoji: "🚛"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["githubcli"]
-published: false
+publication_name: "ncdc"
+published: true
 ---
 
 https://docs.github.com/ja/organizations/organizing-members-into-teams/about-teams
