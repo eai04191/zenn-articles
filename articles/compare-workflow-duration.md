@@ -1,5 +1,5 @@
 ---
-title: "ubuntu-slimに切り替える際に実行時間がどれほど伸びるか比較する"
+title: "ubuntu-slimに切り替えると実行時間がどれほど伸びるか比較する"
 emoji: "💰"
 type: "tech"
 topics: [githubcli, githubactions]
