@@ -35,7 +35,7 @@ web uiでにらめっこするのは大変なので、gh cliでなんとかで�
 
 macOS 15のzshで動作を確認しました。たぶんbashでも動くと思います。動かなかったらgeminiとかに聞いてください。
 
-```zsh
+```shell
 (
   BRANCH_BEFORE="blank"
   BRANCH_AFTER="ci/ubuntu-slim"
